@@ -4,6 +4,26 @@ body{
     margin: 0;
 }
 
+.dashboard-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007;
+    height: 100vh;
+}
+
+.dashboard-container button{
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px;
+    height: 10vh;
+}
+
 button{
     padding: 10px;
     background-color: #007bff;
