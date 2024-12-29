@@ -1,0 +1,65 @@
+.filter-dialog{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+} 
+
+.filter-content{
+    background-color: #fff;
+    width: 80%;
+    max-width: 500px;
+    margin: 200px auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.filter-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    background:none;
+    border: none;
+}
+
+.filter-close:hover{
+    color: red;
+}
+
+#filter-form{
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+#filter-form label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+#filter-form select, 
+#filter-form input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    font-size: 14px;
+    width: 100%;
+}
+
+#filter-form select:focus, 
+#filter-form input:focus{
+    outline: none;
+    border-color: #007;
+}

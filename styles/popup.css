@@ -1,0 +1,34 @@
+#modal{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    min-width: 200px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 0.3s ease-out;
+}
+
+#modal.success{
+    background-color: #28a754;
+}
+
+#modal.error{
+    background-color: red;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

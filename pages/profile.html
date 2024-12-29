@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<link rel="stylesheet" href="../global.css">
+<link rel="stylesheet" href="../styles/navbar.css">
+<link rel="stylesheet" href="../styles/loader.css">
+<link rel="stylesheet" href="../styles/profile.css">
+<link rel="stylesheet" href="../styles/modal.css">
+<link rel="stylesheet" href="../styles/forms.css">
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./cart.html">Cart</a></li>
+            <li><a href="./profile.html">Profile</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+       </nav>
+
+       <div class="content profile-container">
+
+        <div id="loader" class="loader"></div>
+
+        <div class="profile-card">
+            <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYrUykulTYI5CmKwaIkPnFAdcEk0mHRkfg4A&s" 
+            alt="user avatar" 
+            class="profile-avatar"
+            >
+            <h2 id="profile-name">Test Test</h2>
+            <p id="profile-email">test@gmail.com</p>
+            <p id="profile-birthdate">no birthdate provided</p>
+            <p id="profile-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ipsa.</p>
+            <button class="profile-edit-btn" onclick="editProfile()">Edit Profile</button>
+        </div>
+       </div>
+
+       <div id="edit-profile-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Edit Profile</h3>
+            <form id="edit-profile-form">
+                <label for="edit-name">Name</label>
+                <input type="text" id="edit-name" required>
+                <label for="edit-email">Email</label>
+                <input type="email" id="edit-email" required>
+                <label for="edit-bio">Bio</label>
+                <textarea type="text" id="edit-bio" required></textarea>
+                <label for="edit-birthdate">Birthdate</label>
+                <input type="date" id="edit-birthdate" required>
+                <button type="submit">Save Changes</button>
+                <button type="button" onclick="closeModal()">Cancel</button>
+            </form>
+        </div>
+       </div>
+
+    <script src="../js/profile.js"></script>
+</body>
+</html>
